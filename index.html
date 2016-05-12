@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <title>Caesar code</title>
+
+  <meta charset="UTF-8">
+  <meta name="description" content="caesarCode en- and decrypter">
+  <meta name="keywords" content="caesar,code,caesarCode,cryptography,HTML,CSS,JavaScript">
+  <meta name="author" content="Jeremias Obermoser">
+
+  <script src=inc/javaScript.js></script>
+
+
+
+</head>
+
+<body>
+  <form class="form1" action="index.html" method="post">
+
+    <h1>Caesar Chiffré</h1>
+
+    <div class="seventh">
+          <div>
+            steps:
+          </div>
+
+            <div>
+            <input type="number" name="steps" id="steps" size="10" value="" maxlength="10" width="64px">
+         </div>
+        </div>
+
+    <div class="first">
+        decrypted:<br>
+        <input type="text" name="input" id="textin" size="20" value="" maxlength="40">
+    </div>
+
+	<div class="third">
+      <img src="img/left.png" width="64" height="64">
+    </div>
+    <div class="fourth">
+      <img src="img/right.png" width="64" height="64">
+    </div>
+    <div class="fifth">
+    <div>
+      encrypted
+    </div>
+
+    <div>
+      <input type="text" name="output" id="textout" size="20" value="" maxlength="40" onchange="">
+    </div>
+	</div>
+    <div class="second">
+      <input type="button" id="encrypt" name="encrypt" value="encrypt" onClick="caesarCode(input,steps)">
+    </div>
+
+    <div class="sixth">
+      <input type="button" id="decrypt" name="decrypt" value="decrypt" onClick="solve()">
+    </div>
+
+
+
+
+
+
+
+
+  </form>
+
+</body>
+
+</html>
